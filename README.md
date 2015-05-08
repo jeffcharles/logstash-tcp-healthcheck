@@ -11,7 +11,6 @@ var logstashHost = 'http://somelogstashhost.com';
 var logstashPort = 9876;
 
 module.exports = function detailedHealthcheck(req, res) {
-  var checks = {};
   logstashHealthcheck(logstashHost, logstashPort)
     .then(function(result) {
       res.json({logstash: result});

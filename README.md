@@ -1,5 +1,9 @@
 # logstash-tcp-healthcheck
 
+[![NPM](https://nodei.co/npm/logstash-tcp-healthcheck.png)](https://nodei.co/npm/logstash-tcp-healthcheck/)
+
+[![Circle CI](https://circleci.com/gh/jeffcharles/logstash-tcp-healthcheck/tree/master.svg?style=svg)](https://circleci.com/gh/jeffcharles/logstash-tcp-healthcheck/tree/master)
+
 A utility function that tests if a LogStash instance can be reached over TCP.
 
 ## Usage

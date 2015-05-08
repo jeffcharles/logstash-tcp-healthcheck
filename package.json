@@ -1,0 +1,27 @@
+{
+  "name": "logstash-tcp-healthcheck",
+  "version": "1.0.0",
+  "description": "A library for ensuring LogStash is reachable via TCP",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint . && jscs . && mocha tests.js"
+  },
+  "keywords": [
+    "healthcheck"
+  ],
+  "author": "Jeffrey Charles <jeffreycharles@beyondtechnicallycorrect.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffcharles/logstash-tcp-healthcheck"
+  },
+  "devDependencies": {
+    "jscs": "^1.13.1",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.25",
+    "tcp-ping": "^0.1.1"
+  }
+}

@@ -1,0 +1,7 @@
+machine:
+  services:
+    - docker
+
+test:
+  pre:
+    - docker run -d --net=host --name logstash -v $HOME/logstash:/opt/logstash/conf.d pblittle/docker-logstash:0.15.2

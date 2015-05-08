@@ -4,6 +4,6 @@ machine:
 
 test:
   pre:
-    - docker run -d --net=host --name logstash -v $HOME/logstash:/opt/logstash/conf.d pblittle/docker-logstash:0.15.2
+    - docker run -d --net=host --name logstash -v $HOME/logstash-tcp-healthcheck/logstash:/opt/logstash/conf.d pblittle/docker-logstash:0.15.2
     # Wait for LogStash to come up
     - while ! nc -q 1 localhost 10000 < /dev/null; do sleep 2; done
